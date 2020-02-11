@@ -2,8 +2,11 @@
 
 module.exports = (sequelize,DataTypes) => {
     const User = seqeulize.define('User', {
-        name: DataTypes.STRING,
-        balanec: DataTypes.STRING
+        username: DataTypes.STRING,
+        password: DataTypes.STRING
+    },
+    {
+        timestamps: false
     })
     return User;
 }
