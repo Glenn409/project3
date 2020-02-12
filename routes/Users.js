@@ -1,11 +1,10 @@
+const path = require('path')
 const express = require('express')
-const app = express.Router()
+const router = express.Router()
+// const User = require('../models/User')
 
-const User = require('../models/User')
+// router.use(function(req, res) {
+//     res.sendFile(path.join(__dirname, "../client/public/index.html"));
+//   });
 
-app.post('/register',(req,res) => {
-    const newUser = {
-        username: req.body.username,
-        password: req.body.password
-    }
-})
+module.exports = router;
